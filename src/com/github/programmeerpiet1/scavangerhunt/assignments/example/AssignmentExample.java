@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AssignmentExample extends Assignment<Integer> {
+public class AssignmentExample extends Assignment<Long> {
     public AssignmentExample(final Piet[] pietjes) {
         super(pietjes);
     }
 
     @Override
-    public Integer run() {
+    public Long run() {
         /*
         * De de voorbeeldopdracht is als volgt:
         * Hoe veel mannelijke pieten er zijn boven de 25 jaar.
@@ -22,7 +22,7 @@ public class AssignmentExample extends Assignment<Integer> {
         * note: Er zijn heel veel manieren om dit te doen, maar ik geef even 2 voorbeelden.
         * */
 
-//        return countPietjesExampleOne();
+//        return Long.valueOf(countPietjesExampleOne());
         return countPietjesExampleTwo();
     }
 
@@ -36,8 +36,8 @@ public class AssignmentExample extends Assignment<Integer> {
         return malePietjesAbove25.size();
     }
 
-    private int countPietjesExampleTwo() {
-        return (int) Arrays.stream(pietjes)
+    private long countPietjesExampleTwo() {
+        return Arrays.stream(pietjes)
                 .filter(p -> p.getAge() > 25)
                 .filter(p -> p.getGender().equals(Gender.MALE))
                 .count();

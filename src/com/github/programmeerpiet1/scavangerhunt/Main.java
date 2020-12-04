@@ -15,8 +15,8 @@ public class Main {
         // Begin voorbeeld
         Piet[] examplePietjes = getExamplePietjes();
 
-        Assignment<Integer> assignmentExample = new AssignmentExample(examplePietjes);
-        Integer assignmentExampleResult = assignmentExample.run();
+        Assignment<Long> assignmentExample = new AssignmentExample(examplePietjes);
+        Long assignmentExampleResult = assignmentExample.run();
         System.out.println("Het resultaat van de voorbeeldopdracht");
         System.out.println(assignmentExampleResult);
         System.out.println();
@@ -34,16 +34,16 @@ public class Main {
 
 
         // Opdracht 2
-        Assignment<Integer> assignmentTwo = new AssignmentTwo(pietjes);
-        Integer assignmentTwoResult = assignmentTwo.run();
+        Assignment<Long> assignmentTwo = new AssignmentTwo(pietjes);
+        Long assignmentTwoResult = assignmentTwo.run();
         System.out.println("Het resultaat van opdracht 2:");
         System.out.println(assignmentTwoResult);
         System.out.println();
 
 
         // Opdracht 3
-        Assignment<Integer> assignmentThree = new AssignmentThree(pietjes);
-        Integer assignmentThreeResult = assignmentThree.run();
+        Assignment<Double> assignmentThree = new AssignmentThree(pietjes);
+        Double assignmentThreeResult = assignmentThree.run();
         System.out.println("Het resultaat van opdracht 3:");
         System.out.println(assignmentThreeResult);
     }
@@ -60,7 +60,7 @@ public class Main {
         Piet piet2 = new Piet("Inpak", 21, Gender.FEMALE);
         Piet piet3 = new Piet("Hoofd", 65, Gender.MALE);
         Piet piet4 = new Piet("Wegwijs", 31, Gender.MALE);
-        Piet piet5 = new Piet("Malle", 43, Gender.MALE);
+        Piet piet5 = new Piet("Malle", 19, Gender.MALE);
         Piet piet6 = new Piet("Pakjes", 32, Gender.FEMALE);
         Piet piet7 = new Piet("Post", 56, Gender.MALE);
         Piet piet8 = new Piet("Bak", 45, Gender.MALE);
